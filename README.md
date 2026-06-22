@@ -1,38 +1,62 @@
-# Full Stack Web Development : Final Project
-End-to-end fullstack web app built as part of my Full Stack Web Development project.
+# JCT FSWD – Project 7: SneakRush 👟
 
-## Backend
+End-to-end fullstack e-commerce platform for sneakers, built as the final project of the Full Stack Web Development course @ JCT.
 
-### Database MySQL
+## 🚀 Features
 
-#### Run It
+- **Authentication** — JWT-based login/register with role management (admin / user)
+- **Product catalog** — browse sneakers by size, filter, search
+- **Shopping cart & orders** — full checkout flow
+- **Stripe integration** — embedded payment (test mode)
+- **Admin dashboard** — manage orders, products, promotions
+- **Reviews system** — users can leave product reviews
+- **Promotions** — promo codes and discount management
 
-(in the terminal of the server) npm start
+## 🛠️ Tech Stack
 
-###### Password for all user for demo : 
+| Layer | Tech |
+|-------|------|
+| Frontend | React 19, Vite, React Router, Axios |
+| Payment | Stripe (react-stripe-js) |
+| Backend | Node.js, Express |
+| Database | MySQL 2 |
+| Auth | JWT, bcryptjs, cookies |
 
-admin@sneakrush.com
+## 📁 Project Structure
 
-admin123
+```
+├── client/          # React + Vite frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.jsx
+│   └── package.json
+└── server/          # Express API
+    ├── routes/
+    ├── database/
+    ├── app.js
+    └── server.js
+```
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1NTA1NzcwLCJleHAiOjE3NTU1MDkzNzB9.9KSnMkmiCDuNNhYTlRLz0AEgNdyzAJyGcL9wayoiB8g
+## ⚙️ Setup
 
-jdoe1@example.com
+### Backend
+```bash
+cd server
+npm install
+# Create a .env file (see .env.example)
+npm run dev
+```
 
-SR!Temp2025
+### Frontend
+```bash
+cd client
+npm install
+npm run dev
+```
 
-###### Update Git
+## 🎓 Context
 
-cd C:\Users\eliao\OneDrive\Bureau\Project_7_FSWD
+Final Project — Full Stack Web Development course @ [JCT (Jerusalem College of Technology)](https://www.jct.ac.il)
 
-# 1. Vérifie l’état du repo
-git status  
-
-# 2. Ajoute tous les fichiers (modifiés + nouveaux)
-git add .
-
-# 3. Crée un commit
-git commit -m "update project"
-
-# 4. Pousse sur GitHub (branche main)
-git push origin main
+**Author:** [Aaron Zibi](https://github.com/Aaron-Zibi)
